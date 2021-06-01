@@ -1,7 +1,11 @@
 @charset "UTF-8";
 
 .body {
-  font-family: "Lato", "Raleway";
+  font-family: "Lato";
+}
+
+.title-font {
+  font-family: "Raleway";
 }
 
 .inner {
@@ -15,10 +19,17 @@
   display: block;
 }
 
+a {
+  text-decoration: none;
+}
+
 .header {
   background-color: #fff;
   width: 100%;
   position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
 .header-inner {
@@ -29,7 +40,7 @@
 .header-icon {
   float: left;
   padding-top: 12px;
-  font-size: large;
+  font-size: 24px;
 }
 
 .header-contactbox {
@@ -114,12 +125,12 @@
 .article-title {
   color: #4e4e4e;
   font-size: 24px;
-  margin-bottom: 40px;
   text-align: center;
   
 }
 
 .article-box {
+  margin-top: 40px;
   text-align: center;
 }
 
@@ -185,17 +196,21 @@
 .skill-section-title {
   color: #fff;
   text-align: center;
-  margin-bottom: 50px;
   font-size: 20px;
 }
 
+.skillsection-box {
+  text-align: center;
+}
+
 .skillsection-circlebox {
-  float: left;
+  margin-top: 50px;
   margin-left: 180px;
+  display: inline-block;
 }
 
 .skillsection-circlebox:first-child {
-  margin-left :0%;
+  margin-left :0;
 }
 
 .skillsection-circlebox > p {
@@ -212,6 +227,7 @@
 .nav-inner {
   padding-top: 200px;
   padding-bottom: 200px;
+  text-align: center;
 }
 
 .nav-SNSbox {
@@ -221,6 +237,7 @@
   height: 85px;
   text-align: center;
   transition: all .3s ;
+  display: inline-block;
 }
 
 .nav-inner:first-child {
@@ -251,6 +268,6 @@
 
 .footer-text {
   font-size: 14px;
-  float: right;
+  text-align: right;
   color: #fff;
 }
