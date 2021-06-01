@@ -21,6 +21,7 @@
 
 a {
   text-decoration: none;
+  height: 100%;
 }
 
 .header {
@@ -29,7 +30,7 @@ a {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 1000;
 }
 
 .header-inner {
@@ -39,8 +40,7 @@ a {
 
 .header-icon {
   float: left;
-  padding-top: 12px;
-  font-size: 24px;
+  font-size: 40px;
 }
 
 .header-contactbox {
@@ -136,7 +136,7 @@ a {
 
 .article-box > li {
   margin-left: 100px;
-  margin-top: 40px;
+  margin-top: 80px;
   opacity: .7;
   transition: all .3s;
   float: left;
@@ -144,6 +144,15 @@ a {
 
 .article-box > :first-child {
   margin-left: 0px;
+  margin-top: 0;
+}
+
+.article-box > :nth-child(2) {
+  margin-top: 0;
+}
+
+.article-box > :nth-child(3) {
+  margin-top: 0;
 }
 
 .article-box > li:nth-child(4n) {
@@ -152,6 +161,10 @@ a {
 
 .article-box > li:hover {
   opacity: 1;
+}
+
+li > a {
+  display: block;
 }
 
 .article-textbox {
@@ -201,10 +214,10 @@ a {
 
 .skillsection-box {
   text-align: center;
+  margin-top: 50px;
 }
 
 .skillsection-circlebox {
-  margin-top: 50px;
   margin-left: 180px;
   display: inline-block;
 }
@@ -231,17 +244,12 @@ a {
 }
 
 .nav-SNSbox {
-  float: left;
   background-color: #f2f2f2;
   width:185px ;
   height: 85px;
   text-align: center;
   transition: all .3s ;
   display: inline-block;
-}
-
-.nav-inner:first-child {
-  margin-left: 25%;
 }
 
 .nav-SNSbox:hover {
@@ -253,8 +261,8 @@ a {
 .nav-SNS {
   color: #74cfae;
   position: relative;
-  top: 40%;
-  font-size: x-large;
+  top: 35%;
+  font-size: 30px;
 }
 
 .footer {
