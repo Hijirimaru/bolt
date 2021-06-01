@@ -12,7 +12,6 @@
 
 4. aタグのheight１００％消してdisplay:inlineblockに
   - aタグにdisplay:inlineblockをつけて親要素と大きさが揃うように修正
-  - SNSのaタグに関しては親要素と幅が揃わなかったためwidth100%を追加で記述
 
 5. paddingは一行でかく
   - ２行に分けて書いていたpaddingを１行に
