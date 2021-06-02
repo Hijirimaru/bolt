@@ -54,7 +54,7 @@ a {
   transition: all .3s;
 }
 
-.article-mailbox:hover .article-mail, .header-contactbox:hover .header-contact{
+.article-mailbox:hover .article-mail, .header-contactbox:hover .header-contact {
   color: #333;
 }
 
@@ -144,7 +144,7 @@ a {
   float: left;
 }
 
-.article-box > li:first-child,li:nth-child(2),li:nth-child(3) {
+.article-box > li:nth-child(-n+3) {
   margin-top: 0;
 }
 
