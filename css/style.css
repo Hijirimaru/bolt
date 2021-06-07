@@ -1,268 +1,799 @@
 @charset "UTF-8";
 
-.body {
-  font-family: "Lato";
-}
-
-.title-font {
-  font-family: "Raleway";
-}
-
-.inner {
-  margin: 0 auto;
-  width: 1100px;
-}
-
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: block;
-}
-
-a {
-  text-decoration: none;
-  display: inline-block;
-}
-
-.header {
-  background-color: #fff;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-}
-
-.header-inner {
-  padding: 15px 0 15px;
-}
-
-.header-icon {
-  float: left;
-  font-size: 40px;
-}
-
-.header-contactbox {
-  font-size: 12px;
-  padding: 14px 12px;
-  background-color: #74cfae;
-  float: right;
-}
-
-.header-contact {
-  color: #fff;
-  transition: all .3s;
-}
-
-.article-mailbox:hover .article-mail, .header-contactbox:hover .header-contact {
-  color: #333;
-}
-
-.main-theme {
-  background-color: #f2f2f2;
-  width: 100%;
-  padding-top: 70px;
-}
-
-.main-theme-inner {
-  padding: 250px 0 250px;
-  text-align: center;
-}
-
-.main-theme-title {
-  font-size: 90px;
-  font-weight: 700;
-  color: #74cfae;
-}
-
-.main-theme-subtitle {
-  margin-top: 20px;
-  font-size: 30px;
-  color: #c0c0c0;
-}
-
-.section {
-  background-color: #74cfae;
-}
-
-.section-inner {
-  padding-top: 50px;
-}
-
-.section-imagebox {
-  width: 40%;
-  float: left;
-  text-align: center;
-}
-
-.section-imagebox > img {
-  vertical-align: bottom;
-}
-
-.section-box {
-  float: left;
-  text-align: center;
-  width: 60%;
-  color: #fff;
-}
-
-.section-title {
-  font-size: 24px;
-}
-
-.section-text {
-  font-size: 20px;
-  word-break: keep-all;
-  margin-top: 35px;
-}
-
-.article {
-  background-color: #f2f2f2;
-}
-
-.article-inner {
-  padding: 60px 0 70px;
-}
-
-.article-title {
-  color: #4e4e4e;
-  font-size: 24px;
-  text-align: center;
+@media screen and (min-width: 1200px){
+  .body {
+    font-family: "Lato";
+  }
   
-}
-
-.article-box {
-  margin-top: 40px;
-  text-align: center;
-}
-
-.article-box > li {
-  margin-left: 100px;
-  margin-top: 80px;
-  opacity: .7;
-  transition: all .3s;
-  float: left;
-}
-
-.article-box > li:nth-child(-n+3) {
-  margin-top: 0;
-}
-
-.article-box > li:nth-child(3n+1) {
-  margin-left: 0px;
-}
-
-.article-box > li:hover {
-  opacity: 1;
-}
-
-.article-box > li > a >img {
+  .title-font {
+    font-family: "Raleway";
+  }
+  
+  .inner {
+    margin: 0 auto;
+    width: 1100px;
+  }
+  
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+  
+  a {
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  .header {
+    background-color: #fff;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+  
+  .header-inner {
+    padding: 15px 0 15px;
+  }
+  
+  .header-icon {
+    float: left;
+    font-size: 40px;
+  }
+  
+  .header-contactbox {
+    font-size: 12px;
+    padding: 14px 12px;
+    background-color: #74cfae;
+    float: right;
+  }
+  
+  .header-contact {
+    color: #fff;
+    transition: all .3s;
+  }
+  
+  .article-mailbox:hover .article-mail, .header-contactbox:hover .header-contact {
+    color: #333;
+  }
+  
+  .main-theme {
+    background-color: #f2f2f2;
+    width: 100%;
+    padding-top: 70px;
+  }
+  
+  .main-theme-inner {
+    padding: 250px 0 250px;
+    text-align: center;
+  }
+  
+  .main-theme-title {
+    font-size: 90px;
+    font-weight: 700;
+    color: #74cfae;
+  }
+  
+  .main-theme-subtitle {
+    margin-top: 20px;
+    font-size: 30px;
+    color: #c0c0c0;
+  }
+  
+  .section {
+    background-color: #74cfae;
+  }
+  
+  .section-inner {
+    padding-top: 50px;
+  }
+  
+  .section-imagebox {
+    width: 40%;
+    float: left;
+    text-align: center;
+  }
+  
+  .section-imagebox > img {
+    vertical-align: bottom;
+  }
+  
+  .section-box {
+    float: left;
+    text-align: center;
+    width: 60%;
+    color: #fff;
+  }
+  
+  .section-title {
+    font-size: 24px;
+  }
+  
+  .section-text {
+    font-size: 20px;
+    word-break: keep-all;
+    margin-top: 35px;
+  }
+  
+  .article {
+    background-color: #f2f2f2;
+  }
+  
+  .article-inner {
+    padding: 60px 0 70px;
+  }
+  
+  .article-title {
+    color: #4e4e4e;
+    font-size: 24px;
+    text-align: center;
+    
+  }
+  
+  .article-box {
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+  .article-box > li {
+    margin-left: 100px;
+    margin-top: 80px;
+    opacity: .7;
+    transition: all .3s;
+    float: left;
+  }
+  
+  .article-box > li:nth-child(-n+3) {
+    margin-top: 0;
+  }
+  
+  .article-box > li:nth-child(3n+1) {
+    margin-left: 0px;
+  }
+  
+  .article-box > li:hover {
+    opacity: 1;
+  }
+  
+  .article-box > li > a >img {
+    vertical-align: bottom;
+  }
+  
+  .article-textbox {
+    text-align: center;
+    margin-top:90px;
+  }
+  
+  .article-text {
+    float: left;
+    margin-left: 25%;
+    width: 42%;
+    word-break: keep-all;
+    color: #4e4e4e;
+  }
+  
+  .article-mailbox {
+    float: left;
+    margin-left: 90px;
+    background-color: #74cfae;
+    padding: 14px 20px;
+  }
+  
+  .article-mail {
+    color: #fff;
+    font-size: 12px;
+    transition: all .3s;
+  }
+  
+  .skillsection {
+    background-color: #4e4e4e;
+  }
+  
+  .skillsection-inner {
+    padding: 70px 0 100px;
+  }
+  
+  .skill-section-title {
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+  }
+  
+  .skillsection-box {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .skillsection-box > li {
+    margin-left: 180px;
+    display: inline-block;
+  }
+  
+  .skillsection-box > li:first-child {
+    margin-left :0;
+  }
+  
+  .skillsection-box > li > p {
+    color: #fff;
+    font-size: 16px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .skillsection-box > li > img {
   vertical-align: bottom;
+  }
+  
+  .nav {
+    background-color: #f2f2f2;
+  }
+  
+  .nav-inner {
+    padding: 200px 0 200px;
+    text-align: center;
+  }
+  
+  .nav-inner > li {
+    transition: all .3s ;
+    display: inline-block;
+  }
+  
+  .nav-inner > li:hover {
+    background-color: #fff;
+  }
+  
+  .nav-inner > li > a {
+    padding: 25px 0 25px;
+    width: 185px
+  }
+  
+  .nav-inner > li > a > i {
+    color: #74cfae;
+    font-size: 30px;
+  }
+  
+  .footer {
+    background-color: #74cfae;
+  }
+  
+  .footer-inner {
+    padding: 20px 0 25px;
+  }
+  
+  .footer-text {
+    font-size: 14px;
+    text-align: right;
+    color: #fff;
+  }
 }
 
-.article-textbox {
-  text-align: center;
-  margin-top:90px;
+
+@media screen and (max-width: 1199px){
+  .body {
+    font-family: "Lato";
+  }
+  
+  .title-font {
+    font-family: "Raleway";
+  }
+  
+  .inner {
+    margin: 0 auto;
+    width: 97%;
+  }
+  
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+  
+  a {
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  .header {
+    background-color: #fff;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+  
+  .header-inner {
+    padding: 15px 0 15px;
+  }
+  
+  .header-icon {
+    float: left;
+    font-size: 40px;
+  }
+  
+  .header-contactbox {
+    font-size: 12px;
+    padding: 14px 12px;
+    background-color: #74cfae;
+    float: right;
+  }
+  
+  .header-contact {
+    color: #fff;
+    transition: all .3s;
+  }
+  
+  .article-mailbox:hover .article-mail, .header-contactbox:hover .header-contact {
+    color: #333;
+  }
+  
+  .main-theme {
+    background-color: #f2f2f2;
+    width: 100%;
+    padding-top: 70px;
+  }
+  
+  .main-theme-inner {
+    padding: 250px 0 250px;
+    text-align: center;
+  }
+  
+  .main-theme-title {
+    font-size: 90px;
+    font-weight: 700;
+    color: #74cfae;
+  }
+  
+  .main-theme-subtitle {
+    margin-top: 20px;
+    font-size: 30px;
+    color: #c0c0c0;
+  }
+  
+  .section {
+    background-color: #74cfae;
+  }
+  
+  .section-inner {
+    padding: 50px 0 25px;
+  }
+  
+  .section-imagebox {
+    text-align: center;
+  }
+  
+  .section-imagebox > img {
+    vertical-align: bottom;
+  }
+  
+  .section-box {
+    text-align: center;
+    color: #fff;
+  }
+  
+  .section-title {
+    font-size: 24px;
+    margin-top: 20px;
+  }
+  
+  .section-text {
+    font-size: 16px;
+    word-break: keep-all;
+    margin-top: 35px;
+  }
+  
+  .article {
+    background-color: #f2f2f2;
+  }
+  
+  .article-inner {
+    padding: 60px 0 70px;
+  }
+  
+  .article-title {
+    color: #4e4e4e;
+    font-size: 24px;
+    text-align: center;
+    
+  }
+  
+  .article-box {
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+  .article-box > li {
+    opacity: .7;
+    transition: all .3s;
+  }
+  
+  .article-box > li:nth-child(3n + 4) {
+    margin-top: 80px;
+  }
+  
+  .article-box > li:hover {
+    opacity: 1;
+  }
+  
+  .article-box > li > a >img {
+    vertical-align: bottom;
+  }
+  
+  .article-textbox {
+    text-align: center;
+    margin-top:80px;
+  }
+  
+  .article-text {
+    word-break: keep-all;
+    color: #4e4e4e;
+    font-size: 15px;
+  }
+  
+  .article-mailbox {
+    background-color: #74cfae;
+    padding: 14px 20px;
+    margin-top: 40px;
+  }
+  
+  .article-mail {
+    color: #fff;
+    font-size: 12px;
+    transition: all .3s;
+  }
+  
+  .skillsection {
+    background-color: #4e4e4e;
+  }
+  
+  .skillsection-inner {
+    padding: 70px 0 100px;
+  }
+  
+  .skill-section-title {
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+  }
+  
+  .skillsection-box {
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .skillsection-box > li {
+    margin-top: 88px;
+  }
+
+  .skillsection-box > li > p {
+    color: #fff;
+    font-size: 16px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .skillsection-box > li > img {
+  vertical-align: bottom;
+  }
+  
+  .nav {
+    background-color: #f2f2f2;
+  }
+  
+  .nav-inner {
+    padding: 200px 0 200px;
+    text-align: center;
+  }
+  
+  .nav-inner > li {
+    transition: all .3s ;
+    display: inline-block;
+  }
+  
+  .nav-inner > li:hover {
+    background-color: #fff;
+  }
+  
+  .nav-inner > li > a {
+    padding: 25px 0 25px;
+    width: 160px
+  }
+  
+  .nav-inner > li > a > i {
+    color: #74cfae;
+    font-size: 30px;
+  }
+  
+  .footer {
+    background-color: #74cfae;
+  }
+  
+  .footer-inner {
+    padding: 20px 0 25px;
+  }
+  
+  .footer-text {
+    font-size: 14px;
+    text-align: right;
+    color: #fff;
+  }
 }
 
-.article-text {
-  float: left;
-  margin-left: 25%;
-  width: 42%;
-  word-break: keep-all;
-  color: #4e4e4e;
-}
+@media screen and (max-width: 767px){
+  .body {
+    font-family: "Lato";
+  }
+  
+  .title-font {
+    font-family: "Raleway";
+  }
+  
+  .inner {
+    margin: 0 auto;
+    width: 97%;
+  }
+  
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+  
+  a {
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  .header {
+    background-color: #fff;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+  
+  .header-inner {
+    padding: 15px 0 15px;
+  }
+  
+  .header-icon {
+    float: left;
+    font-size: 40px;
+  }
+  
+  .header-contactbox {
+    font-size: 12px;
+    padding: 14px 12px;
+    background-color: #74cfae;
+    float: right;
+    display: none;
+  }
+  
+  .header-contact {
+    color: #fff;
+    transition: all .3s;
+  }
 
-.article-mailbox {
-  float: left;
-  margin-left: 90px;
-  background-color: #74cfae;
-  padding: 14px 20px;
-}
+  .header-hamburger {
+    padding:10px ;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    float: right;
+    width: 15px;
+    height: 10px;
+  }
 
-.article-mail {
-  color: #fff;
-  font-size: 12px;
-  transition: all .3s;
-}
+  .header-hamburger > div {
+    margin-top: 3px;
+    background-color: #ddd;
+    height: 1px;
+  }
 
-.skillsection {
-  background-color: #4e4e4e;
-}
-
-.skillsection-inner {
-  padding: 70px 0 100px;
-}
-
-.skill-section-title {
-  color: #fff;
-  text-align: center;
-  font-size: 20px;
-}
-
-.skillsection-box {
-  text-align: center;
-  margin-top: 50px;
-}
-
-.skillsection-box > li {
-  margin-left: 180px;
-  display: inline-block;
-}
-
-.skillsection-box > li:first-child {
-  margin-left :0;
-}
-
-.skillsection-box > li > p {
-  color: #fff;
-  font-size: 16px;
-  margin-top: 20px;
-  text-align: center;
-}
-
-.skillsection-box > li > img {
-vertical-align: bottom;
-}
-
-.nav {
-  background-color: #f2f2f2;
-}
-
-.nav-inner {
-  padding: 200px 0 200px;
-  text-align: center;
-}
-
-.nav-inner > li {
-  transition: all .3s ;
-  display: inline-block;
-}
-
-.nav-inner > li:hover {
-  background-color: #fff;
-}
-
-.nav-inner > li > a {
-  padding: 25px 0 25px;
-  width: 185px
-}
-
-.nav-inner > li > a > i {
-  color: #74cfae;
-  font-size: 30px;
-}
-
-.footer {
-  background-color: #74cfae;
-}
-
-.footer-inner {
-  padding: 20px 0 25px;
-}
-
-.footer-text {
-  font-size: 14px;
-  text-align: right;
-  color: #fff;
+  .header-hamburger > div:first-child {
+    margin-top: 0px;
+  }
+  .header-contact {
+    color: #fff;
+    transition: all .3s;
+  }
+  
+  .article-mailbox:hover .article-mail, .header-contactbox:hover .header-contact {
+    color: #333;
+  }
+  
+  .main-theme {
+    background-color: #f2f2f2;
+    width: 100%;
+    padding-top: 70px;
+  }
+  
+  .main-theme-inner {
+    padding: 160px 0 130px;
+    text-align: center;
+  }
+  
+  .main-theme-title {
+    font-size: 80px;
+    font-weight: 700;
+    color: #74cfae;
+  }
+  
+  .main-theme-subtitle {
+    margin-top: 20px;
+    font-size: 30px;
+    color: #c0c0c0;
+  }
+  
+  .section {
+    background-color: #74cfae;
+  }
+  
+  .section-inner {
+    padding: 50px 0 25px;
+  }
+  
+  .section-imagebox {
+    text-align: center;
+  }
+  
+  .section-imagebox > img {
+    vertical-align: bottom;
+  }
+  
+  .section-box {
+    text-align: center;
+    color: #fff;
+  }
+  
+  .section-title {
+    font-size: 24px;
+    margin-top: 20px;
+  }
+  
+  .section-text {
+    font-size: 24.5px;
+    word-break: keep-all;
+    margin-top: 35px;
+  }
+  
+  .article {
+    background-color: #f2f2f2;
+  }
+  
+  .article-inner {
+    padding: 60px 0 70px;
+  }
+  
+  .article-title {
+    color: #4e4e4e;
+    font-size: 24px;
+    text-align: center;
+    
+  }
+  
+  .article-box {
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+  .article-box > li {
+    opacity: .7;
+    transition: all .3s;
+  }
+  
+  .article-box > li:nth-child(3n + 4) {
+    margin-top: 80px;
+  }
+  
+  .article-box > li:hover {
+    opacity: 1;
+  }
+  
+  .article-box > li > a >img {
+    vertical-align: bottom;
+  }
+  
+  .article-textbox {
+    text-align: center;
+    margin-top:80px;
+  }
+  
+  .article-text {
+    word-break: keep-all;
+    color: #4e4e4e;
+    font-size: 22px;
+  }
+  
+  .article-mailbox {
+    background-color: #74cfae;
+    padding: 14px 20px;
+    margin-top: 40px;
+  }
+  
+  .article-mail {
+    color: #fff;
+    font-size: 25px;
+    transition: all .3s;
+  }
+  
+  .skillsection {
+    background-color: #4e4e4e;
+  }
+  
+  .skillsection-inner {
+    padding: 70px 0 100px;
+  }
+  
+  .skill-section-title {
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+  }
+  
+  .skillsection-box {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .skillsection-box > li {
+    margin-top: 88px;
+  }
+  
+  .skillsection-box > li > p {
+    color: #fff;
+    font-size: 16px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .skillsection-box > li > img {
+  vertical-align: bottom;
+  }
+  
+  .nav {
+    background-color: #f2f2f2;
+  }
+  
+  .nav-inner {
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .nav-inner > li {
+    display: inline-block;
+    width: 100%;
+    padding: 0 15px;
+  }
+  
+  .nav-inner > li > a:hover {
+    background-color: #fff;
+  }
+  
+  .nav-inner > li > a {
+    transition: all .3s ;
+    padding: 25px 0 25px;
+    width: 100%;
+  }
+  
+  .nav-inner > li > a > i {
+    color: #74cfae;
+    font-size: 30px;
+  }
+  
+  .footer {
+    background-color: #74cfae;
+  }
+  
+  .footer-inner {
+    padding: 20px 0 25px;
+  }
+  
+  .footer-text {
+    font-size: 20px;
+    text-align: right;
+    color: #fff;
+  }
 }
