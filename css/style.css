@@ -34,7 +34,7 @@ a {
 }
 
 .header-inner {
-  padding: 15px 0 15px;
+  padding: 15px 0;
 }
 
 .header-icon {
@@ -73,7 +73,7 @@ a {
 
 .main-theme-inner {
   text-align: center;
-  padding: 250px 0 250px;
+  padding: 250px 0;
 }
 
 .main-theme-title {
@@ -246,7 +246,7 @@ a {
 }
 
 .nav-inner {
-  padding: 200px 0 200px;
+  padding: 200px 0;
   text-align: center;
 }
 
@@ -293,7 +293,6 @@ a {
   }
   
   .section-text {
-    font-size: 16px;
     margin-top: 35px;
   }
   
@@ -325,7 +324,6 @@ a {
   }
   
   .article-text {
-    font-size: 15px;
     float: none;
     margin: 0 auto;
     width: auto;
@@ -335,14 +333,6 @@ a {
     margin-top: 40px;
     margin-left: 0;
     float: none;
-  }
-  
-  .skillsection-inner {
-    padding: 70px 0 100px;
-  }
-  
-  .skillsection-box {
-    margin-top: 50px;
   }
   
   .skillsection-box > li {
@@ -376,16 +366,17 @@ a {
     float: right;
     width: 15px;
     height: 10px;
-    display: inline-block;
+    display: block;
   }
   
-  .header-hamburger > div {
+  .header-hamburger > span {
     margin-top: 3px;
     background-color: #ddd;
     height: 1px;
+    display: block;
   }
   
-  .header-hamburger > div:first-child {
+  .header-hamburger > span:first-child {
     margin-top: 0px;
   }
   
@@ -393,50 +384,12 @@ a {
     padding: 160px 0 130px;
   }
   
-  .section-inner {
-    padding: 50px 0 25px;
-  }
-  
-  .section-text {
-    font-size: 24.5px;
-    margin-top: 35px;
+  .main-theme-title {
+    font-size: 80px;
   }
   
   .article-inner {
     padding: 60px 0 70px;
-  }
-  
-  .article-box > li:nth-child(3n + 4) {
-    margin-top: 80px;
-  }
-  
-  .article-textbox {
-    margin-top:80px;
-  }
-  
-  .article-text {
-    font-size: 22px;
-  }
-  
-  .article-mailbox {
-    margin-top: 40px;
-  }
-  
-  .article-mail {
-    font-size: 25px;
-    transition: all .3s;
-  }
-  
-  .skillsection-inner {
-    padding: 70px 0 100px;
-  }
-  
-  .skillsection-box {
-    margin-top: 50px;
-  }
-  
-  .skillsection-box > li {
-    margin-top: 88px;
   }
   
   .nav-inner {
@@ -451,9 +404,5 @@ a {
   .nav-inner > li > a  {
     display: inline-block;
     width: 100%;
-  }
-  
-  .footer-text {
-    font-size: 20px;
   }
 }
